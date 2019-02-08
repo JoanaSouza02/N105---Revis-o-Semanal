@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+
+#main{
+    display: grid;
+    grid-template-areas: "header header header header"
+                         "nav nav nav nav"
+                         "section section aside aside"
+                         "footer footer footer footer";
+    grid-template-rows: 200px 50px 700px 100px;
+}
+
+header{
+    grid-area: header;
+    background-color: rgb(255, 142, 221);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+header img{
+    width: 12%;
+}
+
+nav{
+    grid-area: nav;
+    background-color: rgb(195, 245, 197);
+}
+
+
+
+section{
+    grid-area: section;
+    background-color: rgb(254, 255, 167);
+}
+
+aside{
+    grid-area: aside;
+    background-color: rgb(183, 159, 250);
+}
+
+footer{
+    grid-area: footer;
+    background-color: rgb(148, 238, 241);
+}
